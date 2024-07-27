@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply text-lg;
+  @apply text-slate-300;
+}
+
+.nav-link:hover {
+  @apply text-sky-300;
+}
+
+.nav-link.active {
+  @apply font-bold text-sky-300;
+}
