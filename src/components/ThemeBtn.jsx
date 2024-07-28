@@ -23,9 +23,9 @@ const ThemeBtn = () => {
       onClick={handleThemeChange}
     >
       {theme === "dark" ? (
-        <SunIcon className="hover:fill-yellow-400 hover:stroke-yellow-400" />
+        <SunIcon className="text-slate-200 hover:fill-yellow-400 hover:stroke-yellow-400" />
       ) : (
-        <MoonIcon className="hover:fill-current" />
+        <MoonIcon className="text-slate-800 hover:fill-current" />
       )}
     </button>
   );

@@ -5,14 +5,13 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply text-lg;
-  @apply text-slate-300;
+  @apply text-lg text-slate-700 dark:text-slate-300;
 }
 
 .nav-link:hover {
-  @apply text-sky-300;
+  @apply text-sky-500 dark:text-sky-300;
 }
 
 .nav-link.active {
-  @apply font-bold text-sky-300;
+  @apply text-sky-500 dark:text-sky-300;
 }

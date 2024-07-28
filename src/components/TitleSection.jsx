@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-const TitleSection = ({children}) => {
+const TitleSection = ({ children }) => {
   return (
-    <h2 className="font-montserrat font-extrabold text-5xl text-slate-800">
-        {children}
+    <h2 className="font-montserrat text-5xl font-extrabold text-slate-800 dark:text-slate-200">
+      {children}
     </h2>
-  )
-}
+  );
+};
 
 TitleSection.propTypes = {
-    children: PropTypes.node
-}
+  children: PropTypes.node,
+};
 
-export default TitleSection
+export default TitleSection;
