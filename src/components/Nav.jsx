@@ -1,10 +1,22 @@
 import ThemeBtn from "../components/ThemeBtn";
 
 const Nav = () => {
+
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+      link.classList.add("active");
+    });
+  });
+
   return (
     <>
       <div className="flex gap-8">
-        <a href="#home" className="nav-link">
+        <a href="#home" className="nav-link active">
           Home
         </a>
 
@@ -23,7 +35,7 @@ const Nav = () => {
       <div className="flex items-center gap-8">
         <a
           href="#contact"
-          className="ml-20 rounded-full bg-sky-300 px-4 py-2 text-slate-800 hover:bg-sky-500 hover:text-white"
+          className="rounded-full border-sky-300 border-2 hover:bg-sky-300 px-4 py-2 hover:text-slate-800 text-slate-200 transition-all duration-300 ease-in-out"
         >
           Contact me
         </a>

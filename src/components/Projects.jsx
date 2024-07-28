@@ -1,8 +1,11 @@
+import Section from "./Section";
+import TitleSection from "./TitleSection";
+
 const Projects = () => {
   return (
-    <section id="projects" className="">
-      Projects
-    </section>
+    <Section id="projects">
+      <TitleSection>Projects</TitleSection>
+    </Section>
   );
 };
 
