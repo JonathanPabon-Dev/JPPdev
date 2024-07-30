@@ -8,10 +8,16 @@
   @apply text-lg text-slate-700 dark:text-slate-300;
 }
 
-.nav-link:hover {
-  @apply text-sky-500 dark:text-sky-300;
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  @apply text-sky-500 outline-none dark:text-sky-300;
 }
 
 .nav-link.active {
   @apply text-sky-500 dark:text-sky-300;
+}
+
+.container {
+  @apply px-5;
 }

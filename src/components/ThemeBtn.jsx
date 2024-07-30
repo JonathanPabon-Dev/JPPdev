@@ -25,7 +25,7 @@ const ThemeBtn = () => {
       {theme === "dark" ? (
         <SunIcon className="text-slate-200 hover:fill-yellow-400 hover:stroke-yellow-400" />
       ) : (
-        <MoonIcon className="text-slate-800 hover:fill-current" />
+        <MoonIcon className="text-slate-600 hover:fill-current" />
       )}
     </button>
   );

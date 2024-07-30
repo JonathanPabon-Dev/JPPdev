@@ -11,9 +11,9 @@ const Header = () => {
       const scrollTop = window.scrollY;
       const scrollDirection = scrollTop > lastScrollTop ? "down" : "up";
 
-      if (scrollDirection === "down" && scrollTop > 200) {
+      if (scrollDirection === "down" && scrollTop > 100) {
         setNavHidden(true);
-      } else if (scrollDirection === "up" && scrollTop < 200) {
+      } else if (scrollDirection === "up" && scrollTop < 100) {
         setNavHidden(false);
       }
 
@@ -27,13 +27,13 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 w-full bg-slate-200 py-3 shadow-md dark:bg-slate-800 ${
+      className={`fixed left-0 top-0 w-full bg-transparent py-3 font-semibold shadow-md ${
         navHidden ? "hidden" : ""
       }`}
     >
       <nav
         role="navigation"
-        className="container mx-auto flex h-full items-center justify-between"
+        className="container mx-auto flex h-full items-center justify-between gap-5"
       >
         <Logo />
         <Nav />
