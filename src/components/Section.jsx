@@ -4,7 +4,7 @@ const Section = ({ id, className, children }) => {
   return (
     <section
       id={id}
-      className={`flex flex-col items-center py-24 ${className}`}
+      className={`container mx-auto flex flex-col items-center justify-center py-24 shadow-sm ${className}`}
     >
       {children}
     </section>

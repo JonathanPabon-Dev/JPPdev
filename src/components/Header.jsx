@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 w-full bg-transparent py-3 font-semibold shadow-md ${
+      className={`fixed left-0 top-0 z-10 w-full bg-transparent py-3 font-semibold shadow-md ${
         navHidden ? "hidden" : ""
       }`}
     >

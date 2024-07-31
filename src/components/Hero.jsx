@@ -1,11 +1,11 @@
+import Section from "./Section";
+import MouseIcon from "../icons/MouseIcon";
+
 const imagenUrl = new URL("../assets/jpImage.jpg", import.meta.url);
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="container mx-auto flex h-screen flex-col items-center justify-center"
-    >
+    <Section id="home" className="relative h-screen">
       <img
         src={imagenUrl}
         alt="Jonathan Pabon image"
@@ -18,11 +18,12 @@ const Hero = () => {
         Full Stack Developer
       </h3>
       <p className="mt-10 text-center font-poppins text-lg text-slate-700 dark:text-slate-300 md:w-[60%]">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit
-        minus consequuntur amet saepe sit itaque numquam explicabo debitis. Cum
-        minus impedit placeat nulla tenetur natus voluptas nihil et recusandae.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quam et
+        explicabo, incidunt assumenda quos voluptas animi dolorum odio
+        accusamus!
       </p>
-    </section>
+      <MouseIcon className="absolute bottom-0 mb-24 text-slate-700 dark:text-slate-300 sm:hidden md:flex" />
+    </Section>
   );
 };
 
