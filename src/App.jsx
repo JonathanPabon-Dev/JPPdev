@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 import MenuProvider from "./providers/MenuProvider";
 import FiltersProvider from "./providers/FiltersProvider";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Projects />
       </FiltersProvider>
       <Skills />
+      <Contact />
     </div>
   );
 };

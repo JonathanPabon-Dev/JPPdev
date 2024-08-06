@@ -1,12 +1,16 @@
 import PropTypes from "prop-types";
 
-const Section = ({ id, className, children }) => {
+const Section = ({ id, className, altern = false, children }) => {
   return (
     <section
       id={id}
-      className={`container mx-auto flex flex-col items-center justify-center py-24 shadow-sm ${className}`}
+      className={`shadow-sm ${altern && "bg-slate-500 bg-opacity-5"} ${className}`}
     >
-      {children}
+      <div
+        className={`container mx-auto flex h-full flex-col items-center justify-center py-24`}
+      >
+        {children}
+      </div>
     </section>
   );
 };
@@ -14,6 +18,7 @@ const Section = ({ id, className, children }) => {
 Section.propTypes = {
   id: PropTypes.string,
   className: PropTypes.string,
+  altern: PropTypes.bool,
   children: PropTypes.node,
 };
 

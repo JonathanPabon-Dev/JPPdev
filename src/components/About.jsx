@@ -3,7 +3,7 @@ import TitleSection from "./TitleSection";
 
 const About = () => {
   return (
-    <Section id="about" className="bg-slate-500 bg-opacity-5">
+    <Section id="about" altern>
       <TitleSection>About Me</TitleSection>
       <p className="mt-16 font-poppins text-slate-700 dark:text-slate-300">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
