@@ -9,7 +9,7 @@ const MenuBtn = () => {
   return (
     <button
       type="button"
-      className="flex size-8 items-center justify-center rounded-full bg-transparent transition sm:hidden"
+      className="flex size-8 items-center justify-center rounded-full bg-transparent transition md:hidden"
       onClick={handleShowMenu}
     >
       {showMenu ? (
