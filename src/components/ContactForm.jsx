@@ -22,7 +22,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-16 flex w-[60%] flex-col items-center gap-8"
+      className="mt-16 flex flex-col items-center gap-8 xs:w-full sm:w-[60%]"
     >
       <div className="form-group relative flex w-full items-center">
         <input

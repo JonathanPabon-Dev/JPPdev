@@ -5,7 +5,7 @@ const imagenUrl = new URL("../assets/jpImage.jpg", import.meta.url);
 
 const Hero = () => {
   return (
-    <Section id="home" className="relative h-screen">
+    <Section id="home" className="relative min-h-screen">
       <img
         src={imagenUrl}
         alt="Jonathan Pabon image"
@@ -22,7 +22,7 @@ const Hero = () => {
         explicabo, incidunt assumenda quos voluptas animi dolorum odio
         accusamus!
       </p>
-      <MouseIcon className="absolute bottom-0 mb-24 text-slate-700 dark:text-slate-300 sm:hidden md:flex" />
+      <MouseIcon className="bottom-0 mt-10 text-slate-700 dark:text-slate-300 sm:hidden md:flex" />
     </Section>
   );
 };

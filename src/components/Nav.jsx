@@ -22,7 +22,7 @@ const Nav = () => {
       <div
         className={`${
           showMenu ? "flex" : "hidden"
-        } flex-col items-center gap-8 sm:flex sm:flex-row`}
+        } flex-col items-center gap-8 md:flex md:flex-row`}
       >
         <a href="#home" className="nav-link active">
           Home

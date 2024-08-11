@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <Section id="skills" altern>
       <TitleSection>Skills</TitleSection>
-      <ul className="mt-16 flex w-[60%] list-none flex-wrap gap-7">
+      <ul className="mt-16 flex list-none flex-wrap justify-center gap-7">
         {Object.keys(skillsIcons).map((skill) => (
           <SkillsItem key={skill}>
             {React.createElement(skillsIcons[skill], {
