@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import JPdevLogo from "../assets/JPdevLogo";
 import Nav from "./Nav";
 import { useEffect, useState } from "react";
 
@@ -35,7 +35,13 @@ const Header = () => {
         role="navigation"
         className="container mx-auto flex h-full items-center justify-between gap-5"
       >
-        <Logo />
+        <a href="/">
+          <JPdevLogo
+            className={"h-10"}
+            colorJ={"dark:fill-sky-500 fill-sky-600"}
+            colorP={"dark:fill-slate-200 fill-slate-700"}
+          />
+        </a>
         <Nav />
       </nav>
     </header>

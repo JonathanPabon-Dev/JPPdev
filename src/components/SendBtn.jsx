@@ -1,30 +1,18 @@
+import SendIcon from "../icons/SendIcon";
+
 const SendBtn = () => {
   return (
     <>
       <button
         type="submit"
-        className={`w-fit min-w-32 rounded-full border-2 border-sky-500 px-4 py-2 text-lg font-medium transition-all duration-300 hover:bg-sky-500 hover:text-slate-200 focus:bg-sky-500 focus:text-slate-200 dark:border-sky-300 dark:text-slate-300 dark:hover:bg-sky-300 dark:hover:text-slate-700 dark:focus:bg-sky-300 dark:focus:text-slate-700`}
+        className={`group flex min-h-12 w-fit min-w-32 items-center justify-center gap-2 rounded-full border-2 border-sky-500 px-4 text-lg font-medium hover:bg-sky-500 hover:text-slate-200 focus:bg-sky-500 focus:text-slate-200 dark:border-sky-300 dark:text-slate-300 dark:hover:bg-sky-300 dark:hover:text-slate-700 dark:focus:bg-sky-300 dark:focus:text-slate-700`}
       >
-        <div className="svg-wrapper-1">
-          <div className="svg-wrapper">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              className="block rotate-45 scale-110 transition-transform duration-300 ease-in-out hover:translate-x-5"
-            >
-              <path fill="none" d="M0 0h24v24H0z"></path>
-              <path
-                fill="currentColor"
-                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <span className="ml-2 block transition-all duration-300 ease-in-out hover:translate-x-5">
-          Send
-        </span>
+        <SendIcon
+          className={
+            "group-hover:rotate-45 group-hover:transition-all group-hover:duration-300"
+          }
+        />
+        <span className="group-hover:hidden">Send</span>
       </button>
     </>
   );

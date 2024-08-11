@@ -5,7 +5,10 @@ const imagenUrl = new URL("../assets/jpImage.jpg", import.meta.url);
 
 const Hero = () => {
   return (
-    <Section id="home" className="relative min-h-screen">
+    <Section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center"
+    >
       <img
         src={imagenUrl}
         alt="Jonathan Pabon image"
@@ -17,12 +20,12 @@ const Hero = () => {
       <h3 className="mt-2 bg-gradient-to-r from-slate-700 via-sky-600 to-slate-700 bg-clip-text font-poppins text-2xl font-bold text-transparent dark:from-slate-300 dark:via-sky-400 dark:to-slate-300">
         Full Stack Developer
       </h3>
-      <p className="mt-10 text-center font-poppins text-lg text-slate-700 dark:text-slate-300 md:w-[60%]">
+      <p className="my-10 text-center font-poppins text-lg text-slate-700 dark:text-slate-300 md:w-[60%]">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quam et
         explicabo, incidunt assumenda quos voluptas animi dolorum odio
         accusamus!
       </p>
-      <MouseIcon className="bottom-0 mt-10 text-slate-700 dark:text-slate-300 sm:hidden md:flex" />
+      <MouseIcon className="absolute bottom-0 mb-24 text-slate-700 dark:text-slate-300" />
     </Section>
   );
 };
