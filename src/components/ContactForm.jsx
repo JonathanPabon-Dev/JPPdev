@@ -41,6 +41,8 @@ const ContactForm = () => {
       <div className="form-group relative flex w-full items-center">
         <input
           type="email"
+          name="email"
+          id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required

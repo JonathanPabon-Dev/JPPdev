@@ -1,8 +1,13 @@
 {
-  "name": "jpdev",
+  "name": "jppdev",
+  "homepage": "https://jonathanpabon-dev.github.io/JPPdev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Jonahtan Pabón",
+    "url": "https://jonathanpabon-dev.github.io/JPPdev/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
